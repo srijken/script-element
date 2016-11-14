@@ -1,11 +1,12 @@
 # Steps to repro
 
-- polymer init
+- `polymer init`
 - choose element
 - project name doesn't matter
-- polymer build: *works*
-- bower install --save srijken/script-element
-- polymer build results in:
+- `polymer build`: *works*
+- `bower install --save srijken/script-element`
+- import script-element from main app element
+- `polymer build` results in:
 
 ```
     info:    Preparing build...
