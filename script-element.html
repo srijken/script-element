@@ -1,0 +1,34 @@
+<link rel="import" href="../polymer/polymer.html">
+
+<!--
+`script-element`
+repro for bundling issue
+
+@demo demo/index.html 
+-->
+
+<dom-module id="script-element">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+    <h2>Hello [[prop1]]</h2>
+  </template>
+
+  <script>
+    Polymer({
+
+      is: 'script-element',
+
+      properties: {
+        prop1: {
+          type: String,
+          value: 'script-element',
+        },
+      },
+
+    });
+  </script>
+</dom-module>
